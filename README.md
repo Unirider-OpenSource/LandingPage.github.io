@@ -1,3 +1,3 @@
 
 
-# Url de la landing page: [LandingPage](https://lading-page-deploit.vercel.app/){:target="_blank"}
+# Url de la landing page: [LandingPage] (https://lading-page-deploit.vercel.app/)
