@@ -211,3 +211,103 @@ section {
 .about .row .content {
     flex: 1 1 45rem;
 }
+
+/* Taxi Animation */
+.taxi {
+    position: relative;
+    animation: moveTaxi 8s infinite;
+}
+
+@keyframes moveTaxi {
+    0% {
+        left: 0;
+    }
+    50% {
+        left: 10%;
+    }
+    100% {
+        left: 0;
+    }
+}
+
+/* Menu Button */
+#menu-btn {
+    font-size: 2.5rem;
+    color: var(--white);
+    display: none;
+    cursor: pointer;
+}
+
+/* Active Header */
+.header.active {
+    background: var(--white);
+    padding: 2rem 9%;
+    box-shadow: var(--box-shadow);
+}
+
+.header.active .logo {
+    color: var(--black);
+    border-bottom: 1px solid var(--black);
+}
+
+.header.active .navbar a {
+    color: var(--black);
+}
+
+.header.active .navbar a:hover {
+    color: var(--primary);
+}
+
+.header.active #menu-btn {
+    color: var(--primary);
+}
+
+/* Home */
+.home {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    background: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.7)), url(/img/fondoMain.jpg);
+    background-position: center;
+    background-size: cover;
+    padding-top: 10rem;
+    height: 100vh;
+}
+
+.home .content {
+    flex: 1 1 45rem;
+}
+
+.home .content h3 {
+    font-size: 5.5rem;
+    color: #39bfbf;
+    line-height: 1.8;
+    font-family: 'Oswald', sans-serif;
+}
+
+.home .content  span {
+    color: #f25430;
+    font-family: 'Oswald', sans-serif;
+}
+.home .content .universidades{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 1.5rem;
+    justify-items: center;
+    padding-top: 2rem;
+}
+
+.home .content .universidades .floating-image {
+    width: 80px;
+    height: auto;
+}
+
+.home .content p {
+    font-size: 2rem;
+    color: var(--bg);
+    line-height: 1.8;
+    padding: 1rem;
+}
+
