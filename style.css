@@ -1048,3 +1048,73 @@ appearance: none;
   font-size: 1.5rem;
 }
 
+@media(max-width:991px){
+    html{
+        font-size: 60%;
+    }
+    .home .taxi {
+        padding: 1rem;
+        width: 200px;
+        
+    }
+    .home .universidades {
+        width: auto;
+    }
+    .header {
+        padding: 2rem;
+    }
+    section{
+        padding: 2rem;
+    }
+}
+
+@media(max-width:768px){
+    #menu-btn{
+        display: initial;
+    }
+    .header .navbar {
+        position: absolute;
+        top: 115%;
+        right: 2rem;
+        background: rgba(252, 250, 250, 0.5);
+        box-shadow: var(--box-shadow);
+        border-radius: .5rem;
+        width: 30rem;
+        transform: scale(0);
+        transform-origin: top right;
+        opacity: 0;
+        backdrop-filter: blur(10px);
+    }
+    .header .navbar.active {
+        transform: scale(1);
+        opacity: 1;
+    }
+    .header .navbar a{
+
+        font-size: 2rem;
+        display: block;
+        padding: 1rem;
+        color: var(--black);
+        margin: 1rem;
+        border-radius: 0.5rem;
+        
+    }
+    .header .navbar a:hover{
+        background: var(--bg);
+    }
+
+    .header .content {
+        text-align: center;
+    }
+    .home .taxi {
+        width: 100px;
+    }
+    .home .content {
+        text-align: center;
+    
+    }
+    .about .heading {
+        font-size: 500%;
+    
+    }
+}
