@@ -549,3 +549,115 @@ section {
     font-weight: 700;
     padding: 12px 8px;
   }
+
+
+  .planes .table-list h1:before {
+    
+    font-family: 'FontAwesome';
+    color: #3fab91;
+    display: inline-block;
+    position: relative;
+    right: 5px;
+    font-size: 16px;
+  } 
+  
+  .planes .table-list h1 span {
+    font-weight: 400;
+  }
+  
+  .planes .table-list h1 span.unlimited {
+    color: #FFF;
+    background: #e95846;
+    font-size: 0.9em;
+    padding: 5px 7px;
+    display: inline-block;
+    -webkit-border-radius: 38px;
+    -moz-border-radius: 38px;
+    border-radius: 38px;
+  }
+  
+  
+  .planes .table-list h1:nth-child(2n) {
+    background: #F0F0F0;
+  }
+  
+  .planes .table-buy {
+    background: #FFF;
+    padding: 15px;
+    text-align: left;
+    overflow: hidden;
+  }
+  
+  .planes .table-buy p {
+    float: left;
+    color: #37353a;
+    font-weight: 700;
+    font-size: 2.4em;
+  }
+  
+  .planes .table-buy p sup {
+    font-size: 0.5em;
+    position: relative;
+    left: 5px;
+  }
+  
+  .planes .table-buy .pricing-action {
+    float: right;
+    color: #FFF;
+    background: #e95846;
+    padding: 10px 16px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    font-weight: 700;
+    font-size: 1.4em;
+    text-shadow: 0 1px 1px rgba(0,0,0,0.4);
+    -webkit-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+  }
+  
+  .planes .table-buy .pricing-action:hover {
+    background: #cf4f3e;
+  }
+  
+  .planes .recommended .table-buy .pricing-action:hover {
+    background: #228799;  
+  }
+  
+  /** ================
+   * Responsive
+   ===================*/
+   @media only screen and (min-width: 768px) and (max-width: 959px) {
+    .planes .pricing-wrapper {
+      width: 768px;
+    }
+  
+    .planes .pricing-table {
+      width: 236px;
+    }
+    
+    .planes .table-list li {
+      font-size: 1.3em;
+    }
+  
+   }
+  
+   @media only screen and (max-width: 767px) {
+    .planes .pricing-wrapper {
+      width: 420px;
+    }
+  
+    .planes .pricing-table {
+      display: block;
+      float: none;
+      margin: 0 0 20px 0;
+      width: 100%;
+    }
+   }
+  
+  @media only screen and (max-width: 479px) {
+    .planes .pricing-wrapper {
+      width: 300px;
+    }
+  } 
