@@ -435,3 +435,117 @@ section {
     line-height: 1.8;
 }
 
+
+/*Planes*/
+
+.planes .heading {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  .planes .about body {
+    background: #2e2a2a;
+    color: #FFF;
+    font-size: 62.5%;
+    font-family: 'Roboto', Arial, Helvetica, Sans-serif, Verdana;
+  }
+  
+  .planes .about ul {
+    list-style-type: none;
+  }
+  
+
+  
+  .planes .pricing-table-title {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 2.6em;
+    color: #39bfbf;
+    margin-top: 15px;
+    text-align: left;
+    margin-bottom: 25px;
+    text-shadow: 0 1px 1px rgba(0,0,0,0.4);
+  }
+  
+  .planes .pricing-table-title a {
+    font-size: 0.6em;
+  }
+  
+  .planes .clearfix:after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    clear: both;
+  }
+  /** ========================
+   * Contenedor
+   ============================*/
+   .planes .pricing-wrapper {
+    width: 960px;
+    margin: 40px auto 0;
+  }
+  
+  .planes .pricing-table {
+    margin: 0 10px;
+    text-align: center;
+    width: 300px;
+    float: left;
+    -webkit-box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+    box-shadow: 0 0 15px rgba(0,0,0,0.4);
+    -webkit-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+  }
+  
+  .planes .pricing-table:hover {
+    -webkit-transform: scale(1.06);
+    -ms-transform: scale(1.06);
+    -o-transform: scale(1.06);
+    transform: scale(1.06);
+  }
+  
+  .planes .pricing-title {
+    color: #FFF;
+    background: #e95846;
+    padding: 20px 0;
+    font-size: 2em;
+    text-transform: uppercase;
+    text-shadow: 0 1px 1px rgba(0,0,0,0.4);
+  }
+  
+  .planes .pricing-table.recommended .pricing-title {
+    background: #2db3cb;
+  }
+  
+  .planes .pricing-table.recommended .pricing-action {
+    background: #2db3cb;
+  }
+  
+  .planes .pricing-table .price {
+    background: #2dc083;
+    font-size: 3.4em;
+    font-weight: 700;
+    padding: 20px 0;
+    text-shadow: 0 1px 1px rgba(0,0,0,0.4);
+  }
+  
+  .planes .pricing-table .price sup {
+    font-size: 0.4em;
+    position: relative;
+    left: 5px;
+  }
+  
+  .planes .table-list {
+    background: #FFF;
+    color: #000000;
+  }
+  
+  .planes .table-list h1 {
+    font-size: 1.4em;
+    font-weight: 700;
+    padding: 12px 8px;
+  }
