@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+:root {
+    --primary:#ffffff;
+    --black: #000;
+    --white: #ffffff;
+    --light-black: #666;
+    --hover: rgba(175, 169, 169, 0.8);
+    --bg: #f9f9f9;
+    --border: 0.1rem solid rgba(0,0,0,0.3);
+    --box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
+}
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css');
+:root {
+    --primary:#f25430;
+    --black: #000;
+    --white: #fff;
+    --light-black: #666;
+    --hover: rgba(244,244,244,0.8);
+    --bg: #f9f9f9;
+    --border: 0.1rem solid rgba(0,0,0,0.3);
+    --box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
+}
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+section{
+    padding: 5rem 9%;
+}
+
+/***UTILITIES CLASSES ***/
+.heading {
+    text-align: center;
+    font-size: 4rem;
+    color: var(--black);
+    text-transform: uppercase;
+    font-weight: bolder;
+    margin-bottom: 3rem;
+}
+
+.heading span {
+    color: var(--primary);
+    border-radius: .5rem;
+    padding: 0 1.5rem;
+    text-transform: uppercase;
+    border: 1px solid #f25430;
+}
+
+
+/*Header*/
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+    z-index: 1000;
+}
+
+.header .logo{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--white);
+    color: var(--white);
+}
+
+.header .logo span{
+    color: var(--primary);
+    text-transform: uppercase;
+}
+
+
+.header .logoUF {
+    border-bottom: 1px solid var(--white);
+    color: var(--white);
+}
