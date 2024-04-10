@@ -928,3 +928,45 @@ appearance: none;
    background: #474544;
    color: #F2F3EB;
  }
+
+
+ @media screen and (max-width: 768px) {
+    .contacto #container {
+     margin: 20px auto;
+     width: 95%;
+   }
+ }
+ 
+ @media screen and (max-width: 480px) {
+    .contacto  h1 {
+     font-size: 26px;
+   }
+   
+   .contacto .underline {
+     width: 68px;
+   }
+   
+   .contacto  #form_button {
+     padding: 15px 25px;
+   }
+ }
+ 
+ @media screen and (max-width: 420px) {
+    .contacto  h1 {
+     font-size: 18px;
+   }
+   
+   .contacto .icon {
+     height: 35px;
+     width: 35px;
+   }
+   
+   .contacto .underline {
+     width: 53px;
+   }
+   
+   .contacto input[type='text'], [type='email'], select, textarea {
+     font-size: 0.875em;
+   }
+ }
+
