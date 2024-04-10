@@ -1118,3 +1118,16 @@ appearance: none;
     
     }
 }
+
+@media (max-width:450px) {
+    html{
+        font-size: 50%;
+    }
+    .footer .box-container .box1 .content {
+      width: 68px;
+      font-size: 50%;
+    }
+    .footer .box-container .box2 .derechos h3 {
+      font-size: 50%;
+    }
+}
