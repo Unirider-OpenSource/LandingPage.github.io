@@ -28,15 +28,19 @@
             <img src="img/logoUniRider.png" alt="logoUF">
         </div>
         <nav class="navbar">
-            <a href="#home">Inicio</a>
-            <a href="#about">Servicio</a>
-            <a href="#producto">Funcionalidades</a>
-            <a href="#planes">planes </a>
-            <a href="#equipo">Nosotros</a>
-            <a href="#contacto">Contacto</a>
-            
+            <a data-i18n="homes" href="#home">Inicio</a>
+            <a data-i18n="Service" href="#about">Servicio</a>
+            <a data-i18n="Features" href="#producto">Funcionalidades</a>
+            <a data-i18n="Plans" href="#planes">planes </a>
+            <a data-i18n="About" href="#equipo">Nosotros</a>
+            <a data-i18n="ContactUs" href="#contacto">Contacto</a>
+
         </nav>
-        
+                    <a><select id="lang-selector" onchange="setLanguage()">
+                <option value="en">English</option>
+                <option value="es">Español</option>
+            </select>
+            </a>
         <div id="menu-btn" class="fas fa-bars"></div>
         
     </header>
@@ -46,10 +50,10 @@
         <section class="home" id="home">
             <div class="content">
                 <h3>ㅤㅤ</h3>
-                <h3>Bienvenido a <span>UniRider</span></h3>
-                <p>Ofrecemos la oportunidad de viajar
+                <h3 data-i18n="welcome" >Bienvenido a <span>UniRider</span></h3>
+                <p data-i18n="service_description">Ofrecemos la oportunidad de viajar
                  de manera eficiente a un precio accesible.</p>
-                <P>Dile adiós a las largas esperas 
+                <P data-i18n="no_more_waiting">Dile adiós a las largas esperas 
                 y a los viajes estresantes.</P>
                 
             </div>
@@ -87,7 +91,7 @@
             <h1>ㅤ</h1>
             <h1>ㅤ</h1>
            
-            <h1 class="heading">ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤCarpooling SERVICE</h1>
+            <h1  data-i18n="service_title" class="heading">ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ    Carpooling SERVICE</h1>
             <div class="row">
                 <div class="image">
                     <img src="img/mockups/wireframesTools.png" alt="imagenTeam" onmouseover="this.style.transform = 'scale(1.2)'" onmouseout="this.style.transform = 'scale(1)'">
@@ -96,30 +100,30 @@
                 <div class="content" id="content">
                     
                     <p></p>
-                    <p>UniRider es una plataforma de carpooling que ofrece a los estudiantes la oportunidad de viajar de manera eficiente y asequible. Nuestro servicio elimina las largas esperas y los viajes estresantes, brindándote la tranquilidad que necesitas para concentrarte en tu educación. Únete a nuestra comunidad de estudiantes satisfechos y experimenta un viaje sin preocupaciones hacia el éxito académico.</p>
+                    <p data-i18n="content">UniRider es una plataforma de carpooling que ofrece a los estudiantes la oportunidad de viajar de manera eficiente y asequible. Nuestro servicio elimina las largas esperas y los viajes estresantes, brindándote la tranquilidad que necesitas para concentrarte en tu educación. Únete a nuestra comunidad de estudiantes satisfechos y experimenta un viaje sin preocupaciones hacia el éxito académico.</p>
                     <h1>ㅤㅤ</h1>
                     <h1>ㅤㅤ</h1>
                     <h1></h1>
-                    <h1>Fortalezas:</h1>
+                    <h1 data-i18n="strengths">Fortalezas:</h1>
                     <div class="icons-container" id="fortalezas">
                         <div class="icons" >
                             <img src="img/precios-bajos.png" alt="precios-bajos" onmouseover="this.style.transform = 'scale(1.2)'" onmouseout="this.style.transform = 'scale(1)'">
                             <h2>ㅤㅤ </h2>
                             <h2>ㅤㅤ</h2>
-                            <h3>Precios bajos</h3>
+                            <h3 data-i18n="low-prices">Precios bajos</h3>
                         </div>
                         
                         <div  class="icons"  id="fortalezas">
                             <img src="img/TIME.png" alt="tiempo" onmouseover="this.style.transform = 'scale(1.2)'" onmouseout="this.style.transform = 'scale(1)'">
                             <h2>ㅤ </h2>
                             <h2>ㅤ</h2>
-                            <h3>Eficiencia</h3>
+                            <h3 data-i18n="efficiency">Eficiencia</h3>
                         </div>
 
                         <div  class="icons" id="fortalezas">
                             <img src="img/cmodidad.png"alt="tiempo" onmouseover="this.style.transform = 'scale(1.2)'" onmouseout="this.style.transform = 'scale(1)'">
                             <h2>ㅤ</h2>
-                            <h3>Comodidad</h3>
+                            <h3 data-i18n="comfort">Comodidad</h3>
                         </div>
                     </div>
                     </div>
@@ -128,99 +132,99 @@
         </section>
 
     <section class="producto" id="producto">
-        <h1 class="heading">Nuestras principales funciones</h1>
+        <h1 data-i18n="features_title" class="heading">Nuestras principales funciones</h1>
         <div class="box-container">
             <!--1-->
             <div class="box">
                 <img src="img/funcionalidades/emparejamiento.png" alt="UniRider">
-                <h3>Sistema de emparejamiento basado en ubicación y horarios</h3>
+                <h3 data-i18n="location_and_schedule_matching">Sistema de emparejamiento basado en ubicación y horarios</h3>
                 
             </div>
             <!--2-->
             <div class="box">
                 <img src="img/funcionalidades/ubicacionTiemporeal.png" alt="UniRider">
-                <h3>Ubicacion en tiempo real</h3>
+                <h3 data-i18n="real_time_location">Ubicacion en tiempo real</h3>
                 
             </div>
             <!--3-->
             <div class="box">
                 <img src="img/funcionalidades/perfil.png" alt="UniRider">
-                <h3> perfil propio </h3>
+                <h3 data-i18n="profile"> perfil propio </h3>
                
             </div>
             <!--4-->
             <div class="box">
                 <img src="img/funcionalidades/noti_cancelacion.png" alt="UniRider">
-                <h3>Notificacion cancelacion de viaje</h3>
+                <h3 data-i18n="trip_cancellation_notification">Notificacion cancelacion de viaje</h3>
                 
             </div>
             <!--5-->
             <div class="box">
                 <img src="img/funcionalidades/seleccionConductor.png" alt="UniRider">
-                <h3>Seleccion de conductores</h3>
+                <h3 data-i18n="driver_selection">Seleccion de conductores</h3>
                 
             </div>
             <!--6-->
             <div class="box">
                 <img src="img/funcionalidades/puntos.png" alt="UniRider">
-                <h3>Acumulación de puntos</h3>
+                <h3 data-i18n="points_accumulation">Acumulación de puntos</h3>
                 
             </div>
             <!--7-->
             <div class="box">
                 <img src="img/funcionalidades/seguridad.png" alt="UniRider">
-                <h3>Seguridad</h3>
+                <h3 data-i18n="security">Seguridad</h3>
                 
             </div>
             <div class="box">
                 <img src="img/funcionalidades/chatEn linea.png" alt="UniRider">
-                <h3>Chat en linea</h3>
+                <h3 data-i18n="online_chat">Chat en linea</h3>
                 
             </div>
             <!--8-->
             <div class="box">
                 <img src="img/funcionalidades/reservaAsientos.png" alt="UniRider">
-                <h3>Reservas de asientos</h3>
+                <h3 data-i18n="seat_reservations">Reservas de asientos</h3>
                
             </div>
             <div class="box">
                 <img src="img/funcionalidades/calificarconductor.png" alt="UniRider">
-                <h3>Calificación al conductor</h3>
+                <h3 data-i18n="driver_rating">Calificación al conductor</h3>
                 
             </div>
             <div class="box">
                 <img src="img/funcionalidades/ververfilconductor.png" alt="UniRider">
-                <h3>Ver perfil del conductor</h3>
+                <h3 data-i18n="view_driver_profile">Ver perfil del conductor</h3>
                 
             </div>
             <div class="box">
                 <img src="img/funcionalidades/botonreporteemergencias.png" alt="UniRider">
-                <h3>Boton de reportes de emergencia</h3>
+                <h3 data-i18n="emergency_report_button">Boton de reportes de emergencia</h3>
                
             </div>
             <div class="box">
                 <img src="img/funcionalidades/reportarUsuario.png" alt="UniRider">
-                <h3>Reportar usuario</h3>
+                <h3 data-i18n="report_user">Reportar usuario</h3>
                 
             </div>
             <div class="box">
                 <img src="img/funcionalidades/metodoPago.png" alt="UniRider">
-                <h3>Diferentes metodos de pago</h3>
+                <h3 data-i18n="different_payment_methods">Diferentes metodos de pago</h3>
                 
             </div>           
             <div class="box">
                 <img src="img/funcionalidades/autenticacion.png" alt="UniRider">
-                <h3>Autenticación de estudiantes</h3>
+                <h3 data-i18n="student_authentication">Autenticación de estudiantes</h3>
                 
             </div>
             
         </div>
-         <!--INICIO tipos de planes-->
+         <!--INICIO tipos de -->
     <!-- Contenedor -->
     <section class="planes" id="planes">
   <div class="pricing-wrapper clearfix">
     <!-- Titulo -->
-    <h1 class="pricing-table-title">ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤPlanes de subscripción </h1>
+    <h1 class="pricing-table-title" data-i18n="plans_title">ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤPlanes de subscripción </h1>
 
     <div class="pricing-table">
       <h3 class="pricing-title">Fremium</h3>
@@ -234,14 +238,14 @@
       </ul>
       <!-- Contratar / Comprar -->
       <div class="table-buy">
-        <p>$0<sup>/ mes</sup></p>
+        <p>$0<sup data-i18n="month">/ mes</sup></p>
         <a href="#" class="pricing-action">Ingresar</a>
       </div>
     </div>
     
     <div class="pricing-table recommended">
       <h3 class="pricing-title">Premium conductor</h3>
-      <div class="price"> S/20.00<sup>/ mes</sup></div>
+      <div class="price"> S/20.00<sup data-i18n="month">/ mes</sup></div>
       <!-- Lista de Caracteristicas / Propiedades -->
       <ul class="table-list">
         <h1>acumulación de puntos  <span>canjeables</span></h1>
@@ -253,14 +257,14 @@
     </ul>
       <!-- Contratar / Comprar -->
       <div class="table-buy">
-        <p>S/20.00<sup>/ mes</sup></p>
+        <p>S/20.00<sup data-i18n="month">/ mes</sup></p>
         <a href="#" class="pricing-action">Comprar</a>
       </div>
     </div>
 
     <div class="pricing-table recommended">
       <h3 class="pricing-title">PREMIUM estudiante</h3>
-      <div class="price">S/15.00<sup>/ mes</sup></div>
+      <div class="price">S/15.00<sup data-i18n="month">/ mes</sup></div>
       <!-- Lista de Caracteristicas / Propiedades -->
       <ul class="table-list">
         <h1>viajes  <span>ilimitados</span></h1>
@@ -276,7 +280,7 @@
       </ul>
       <!-- Contratar / Comprar -->
       <div class="table-buy">
-        <p>S/15.00<sup>/ mes</sup></p>
+        <p>S/15.00<sup data-i18n="month">/ mes</sup></p>
         <a href="#" class="pricing-action">Comprar</a>
       </div>
     </div>
@@ -287,7 +291,7 @@
 
     <!--INICIO EQUIPO-->
         <section class="equipo" id="equipo">
-        <h1 class="heading"> Equipo </h1>
+        <h1 class="heading" data-i18n="team"> Equipo </h1>
         <div class="box-container">
             
             <div class="box">
@@ -340,7 +344,7 @@
     
     <section class="contacto" id="contacto">
         <div id="container">
-            <h1>&bull; Contact Us&bull;</h1>
+            <h1 data-i18n="contact_us"> &bull; Contact Us&bull;   </h1>
             <div class="underline">
             </div>
             <div class="icon_wrapper">
@@ -399,13 +403,13 @@
             </div>
 
             <div class="box2">
-                <h4>Siguenos  en Nuestras Redes</h4>
+                <h4 data-i18n="follow_us">Siguenos  en Nuestras Redes</h4>
                 <a href="https://www.facebook.com/?locale=es_LA" target="_blank"><i class="fab fa-facebook-f"></i></a>
                 <a href="https://www.instagram.com/" target="_blank"><i class="fab fab fa-instagram"></i></a>
                 <a href="https://twitter.com/?lang=es" target="_blank"><i class="fab fab fab fa-twitter"></i></a>
             </div>
             <div class="derechos">
-                <h3>UniRider 2024 Derechos de autor reservado</h3>
+                <h3 data-i18n="copyright">UniRider 2024 Derechos de autor reservado</h3>
              </div>
         </div>
                     
